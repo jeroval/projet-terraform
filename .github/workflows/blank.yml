@@ -35,8 +35,8 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           
-          -name: list files in repo
-       run: |
+      - name: list files in repo
+        run: |
           ls -la
           pwd
           echo $GITHUB_WORKSPACE
