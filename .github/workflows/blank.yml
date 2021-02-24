@@ -49,5 +49,8 @@ jobs:
           chmod +x terraform
           sudo mv terraform /bin
           
+      - name: Terraform init
+        run: terraform init
+          
       - name: Terraform plan
         run: terraform plan
